@@ -1,11 +1,10 @@
 /* eslint-disable */
 import "./style.css";
 
-window.onload = function() {
-  //write your code here
+document.addEventListener("click", function() {
   document.querySelector(".card").classList.add(getSuit());
   document.querySelector(".card").innerHTML = getCard();
-};
+});
 
 let getCard = () => {
   var numbers = [
@@ -33,5 +32,3 @@ let getSuit = () => {
   var randomSuit = Math.floor(Math.random() * suit.length);
   return suit[randomSuit];
 };
-
-window.myClickFunction = function myClickFunction() {};
