@@ -23,7 +23,7 @@ let getCard = () => {
 };
 
 let getSuit = () => {
-  let suit = ["♥ ", "♠ ", "♣", "♦"];
+  let suit = ["♦", "♠", "♣", "♥"];
   let randomSuit = Math.floor(Math.random() * suit.length);
   return suit[randomSuit];
 };
@@ -44,15 +44,14 @@ const refreshButton = document.querySelector("#myButton");
 
 refreshButton.addEventListener("click", refreshPage);
 
-// document.querySelector(".card").innerHTML = getCard();
-
-// change card every 10 seconds
-// setTimeout(function() {
-//   document.querySelector(".card").classList.add(getSuit());
-//   document.querySelector(".card").innerHTML = getCard();
-// }, 10000);
+// setInterval(refreshPage, 10000);
 
 // // Allow the user to specify the card width and height using text inputs.
 // // Get input from user to change height and width of card
-// const userInput = document.getElementById("userInput");
-// userInput.addEventListener("input", () => {});
+let userDimensions = () => {};
+
+const userWidth = document.getElementsByClassName("width");
+userInput.addEventListener("input", () => {});
+
+const userHeight = document.getElementsByClassName("height");
+userInput.addEventListener("input", () => {});

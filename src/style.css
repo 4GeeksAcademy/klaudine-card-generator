@@ -2,7 +2,7 @@ body {
   background-color: green;
 }
 .container {
-  padding-top: 200px;
+  padding-top: 150px;
 }
 .card {
   text-align: center;
@@ -13,47 +13,38 @@ body {
   position: relative;
   background-color: white;
   border-radius: 20px;
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 10px;
-    font-size: 80px;
-  }
-  &::after {
-    position: absolute;
-    top: 0;
-    left: 10px;
-    font-size: 80px;
-    margin-top: 300px;
-    margin-left: 210px;
-  }
-  &.spade:before,
-  &.spade:after {
-    content: "\2660";
-  }
-  &.club:before,
-  &.club:after {
-    content: "\2663";
-  }
-  &.heart:before,
-  &.heart:after {
-    content: "\2665";
-    color: red;
-  }
-  &.diamond:before,
-  &.diamond:after {
-    content: "\2666";
-    color: red;
-  }
 }
+
 .center {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
+
+.top-suit {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 80px;
+}
+
+.bottom-suit {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 80px;
+  margin-top: 300px;
+  margin-left: 210px;
+}
+
 button {
   background-color: black;
   color: white;
   border-radius: 5px;
   font-size: 20px;
+}
+
+form {
+  text-align: center;
+  margin-top: 30px;
 }
