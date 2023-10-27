@@ -46,7 +46,7 @@ refreshButton.addEventListener("click", refreshPage);
 
 // setInterval(refreshPage, 10000);
 
-// // Allow the user to specify the card width and height using text inputs.
+// // Allow the user to specify the card width and height using text inputs
 // // Get input from user to change height and width of card
 let userDimensions = () => {};
 
